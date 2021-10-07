@@ -2,16 +2,20 @@
 <div>
     <h2>Esta é a descrição da pessoa {{nome}}</h2>
     <Info />
+    <Formulario />
+    
 </div>
 </template>
 <script>
 import Info from './Info'
-
+import Formulario from './Formulario'
 export default {
-    nome: 'Pessoa',
+    name: 'Pessoa',
     components: {
-        Info
+        Info,
+        Formulario
     },
+
     data(){
         return{
              nome: 'Primeira pessoa'
