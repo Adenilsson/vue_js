@@ -5,6 +5,10 @@
   <p>O dador de app é:{{testando}}</p>
   <LifeCycle/>
   <Pessoa/>
+  <Reutilizado />
+  <Reutilizado />
+  <Reutilizado />
+  <Reutilizado />
 </div>
 </template>
 <script >
@@ -12,13 +16,15 @@ import PrimeiroComponente from './components/PrimeiroComponente.vue'
 import LifeCycle from './components/LifeCycles.vue' 
 import Pessoa from './components/Pessoa.vue' 
 import Header from './components/Header.vue' 
+import Reutilizado from './components/Reutilizado.vue'
   export default{
     name:'App',
     components:{
       PrimeiroComponente,
       LifeCycle,
       Pessoa,
-      Header
+      Header,
+      Reutilizado
      
     },
     data(){
