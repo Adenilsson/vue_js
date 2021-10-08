@@ -1,5 +1,6 @@
 <template>
 <div>
+
   <PrimeiroComponente />
   <p>O dador de app é:{{testando}}</p>
   <LifeCycle/>
@@ -10,12 +11,14 @@
 import PrimeiroComponente from './components/PrimeiroComponente.vue'
 import LifeCycle from './components/LifeCycles.vue' 
 import Pessoa from './components/Pessoa.vue' 
+
   export default{
     name:'App',
     components:{
       PrimeiroComponente,
       LifeCycle,
       Pessoa
+     
     },
     data(){
       return {
