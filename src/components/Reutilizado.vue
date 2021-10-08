@@ -1,7 +1,9 @@
 <template>
+<div>
 <button @click="ativado">{{mensagem}}</button>
 
-<p>{{estado}}</p>
+<span>{{estado}}</span>
+</div>
 </template>
 <script>
 export default{
@@ -29,3 +31,8 @@ export default{
     }
 }
 </script>
+<style scoped>
+div{padding:10px;
+}
+span{padding:10px;}
+</style>
