@@ -1,7 +1,8 @@
 <template>
 <div>
+    <p>{{email}}</p>
     <Picture />
-    <p v-if="esta_trabalhando">Estou trabalhando no momento.</p>
+    <p v-if="estaTrabalhando">Estou trabalhando no momento.</p>
     <p v-else>Não estou trabalhando no momento</p>
     <p>Utilizo as seguintes tecnologias para backend </p>
     <ul v-for="technology in backend_tecnology">
@@ -16,18 +17,22 @@
     </div>
     <p v-show="mostrar_email">Mande uma mensagem para  {{email}}</p>
     <p class="teste">Para acessar meu portifólio <a v-bind:href="meu_link" target="_blank">meu link</a></p>
+    
 </div>
+
 </template>
 
 <script>
 import Picture from './Picture'
 export default{
     nome: 'Info',
+    props: {
+        email: String,
+        estaTrabalhando: Boolean
+    },
     data(){
         return {
-            esta_trabalhando: true,
             mostrar_email: false,
-            email: 'adenilson@fairtek.com.br',
             meu_link:'https://google.com',
             texbooton:'Mostrar e-mail',
             backend_tecnology:['JavaScript','PHP','Python','java','C++'],
@@ -36,7 +41,8 @@ export default{
                 {id:2,tecnology: 'CSS'},
                 {id:3,tecnology:'vue'}
 
-                ]
+            ],
+            
         }
     },
     components:{
