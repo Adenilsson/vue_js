@@ -1,6 +1,6 @@
 <template>
 <div>
-  <Header :esta_logado ="true"/>
+  <Header :esta_logado ="true" :local="true"/>
   <PrimeiroComponente />
   <p>O dador de app é:{{testando}}</p>
   <LifeCycle/>

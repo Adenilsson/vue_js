@@ -1,8 +1,9 @@
 <template>
 <div>
+    
     <button @click="primeiro($event), segundo($event)">Ativar multiplos eventos</button>
     <p>{{multiplos_eventos}}</p>
-    
+   
     
 </div>
 </template>

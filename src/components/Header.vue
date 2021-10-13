@@ -4,12 +4,15 @@
     <li><a href="#">Projetos</a></li>
     <li><a href="#">Contato</a></li>
     <li v-if="esta_logado">Meu perfil</li>
+    <li v-if="local">Brasil</li>
+    <li v-else="local">Exterior</li>
 </ul>
 </template>
 <script>
 export default{
     name:'Header',
-    props:["esta_logado"]
+    props:["esta_logado"],
+    props:{local: Boolean}
 }
 </script>
 <style scoped>
